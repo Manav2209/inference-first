@@ -1,0 +1,40 @@
+[
+  {
+    "state": "model-cold",
+    "model": "inference-lab:qwen05-cpu",
+    "created_at": "2026-10-28T07:31:04.3115967Z",
+    "message": {
+      "role": "assistant",
+      "content": "Prefill and autoregressive decoding are two key techniques in natural language processing (NLP) that are used to improve the efficiency and accuracy of language models. Prefill decoding involves predicting the next token in a sequence based on the previous tokens, while autoregressive decoding uses the output of the previous token to generate the next token. This approach can lead to more accurate and efficient language models, as it reduces the amount of unnecessary computation and allows the model to focus on generating the"
+    },
+    "done": true,
+    "done_reason": "length",
+    "total_duration": 4749540100,
+    "load_duration": 1406912100,
+    "prompt_eval_count": 69,
+    "prompt_eval_cached_count": 0,
+    "prompt_eval_duration": 633626000,
+    "eval_count": 96,
+    "eval_duration": 2700650000,
+    "engine_decode_tokens_per_second": 35.54699794493918
+  },
+  {
+    "state": "warm",
+    "model": "inference-lab:qwen05-cpu",
+    "created_at": "2026-10-28T07:31:07.2692802Z",
+    "message": {
+      "role": "assistant",
+      "content": "Prefill and autoregressive decoding are two key techniques in natural language processing (NLP) that are used to improve the efficiency and accuracy of language models. Prefill decoding involves predicting the next token in the sequence based on the previous tokens, while autoregressive decoding predicts the next token based on the current token and the previous tokens.\n\nIn prefill decoding, the model predicts the next token based on the previous tokens and the context of the sentence. This approach is useful when"
+    },
+    "done": true,
+    "done_reason": "length",
+    "total_duration": 2950951600,
+    "load_duration": 9618900,
+    "prompt_eval_count": 69,
+    "prompt_eval_cached_count": 68,
+    "prompt_eval_duration": 63316000,
+    "eval_count": 96,
+    "eval_duration": 2848299000,
+    "engine_decode_tokens_per_second": 33.7043266876125
+  }
+]

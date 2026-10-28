@@ -1,0 +1,182 @@
+{
+  "metadata": {
+    "started_at": "2026-10-28T07:29:31.659Z",
+    "model": "inference-lab:qwen05-cpu",
+    "gateway_url": "http://127.0.0.1:3000",
+    "ollama_url": "http://127.0.0.1:11435",
+    "rounds": 5,
+    "max_tokens": 96,
+    "concurrency_levels": [
+      1,
+      2,
+      3
+    ],
+    "schedule": "rotating closed-loop waves: [1,2,3], [3,1,2], [2,3,1]",
+    "temperature": 0,
+    "seed": 42,
+    "node_version": "v22.13.1",
+    "platform": "win32",
+    "cpu_model": "AMD Ryzen 3 5300U with Radeon Graphics         ",
+    "logical_cpus": 8,
+    "total_memory_bytes": 7866544128,
+    "available_memory_at_start_bytes": 1774399488,
+    "ttft_definition": "client request start to first nonempty delta.content; role-only and headers excluded",
+    "throughput_definition": "sum of provider completion_tokens / actual wave wall time",
+    "prompts": [
+      "Explain prefill and autoregressive decoding in a language model. Describe how the KV cache changes the work done during generation. Write a detailed technical paragraph of at least 150 words.",
+      "Explain how a model serving gateway handles streamed responses and client cancellation. Discuss time to first token and total latency. Write a detailed technical paragraph of at least 150 words.",
+      "Explain why a CPU can serve a small quantized language model and what limits its performance. Discuss memory capacity and bandwidth. Write a detailed technical paragraph of at least 150 words."
+    ],
+    "prompt_sha256": [
+      "8b5e7b8487a00b735bcb761c1cf5c08073cf797cd255732e19c9b170c895d1a3",
+      "bd296d5c113f13038f232b3ad59e5f903401e88470773ed75467cac737052c8b",
+      "122e437ae69851ec3c7e9c879a3288d29d5225f1591316cbf5727a41a985da04"
+    ],
+    "limitations": [
+      "closed-loop microbenchmark; not a capacity or open-loop load test",
+      "model-cold means unloaded; Windows filesystem cache is not flushed",
+      "warm requests may reuse cached prompt prefixes",
+      "background desktop apps remain running"
+    ],
+    "finished_at": "2026-10-28T07:31:07.278Z",
+    "available_memory_at_end_bytes": 1390497792
+  },
+  "cold": {
+    "phase": "model-cold",
+    "round": 0,
+    "concurrency": 1,
+    "slot": 0,
+    "prompt_index": 0,
+    "started_at": "2026-10-28T07:29:31.910Z",
+    "ttft_ms": 2083.8024,
+    "latency_ms": 4532.3261,
+    "completion_tokens": 96,
+    "prompt_tokens": 69,
+    "content_events": 96,
+    "first_text_to_last_text_ms": 2440.6224,
+    "text": "Prefill and autoregressive decoding are two key techniques in natural language processing (NLP) that are used to improve the efficiency and accuracy of language models. Prefill decoding involves predicting the next token in a sequence based on the previous tokens, while autoregressive decoding uses the output of the previous token to generate the next token. This approach can lead to more accurate and efficient language models, as it reduces the amount of unnecessary computation and allows the model to focus on generating the",
+    "status": "ok",
+    "http_status": 200,
+    "request_id": "44cdf322-565e-42f0-bccd-6f7d5109143f",
+    "headers_ms": 2080.765,
+    "finish_reason": "length",
+    "output_tokens_per_e2e_second": 21.18117670306203,
+    "finished_at": "2026-10-28T07:29:36.443Z",
+    "wave_wall_ms": 4532.9313999999995
+  },
+  "warm_immediate": {
+    "phase": "warm-immediate",
+    "round": 0,
+    "concurrency": 1,
+    "slot": 0,
+    "prompt_index": 0,
+    "started_at": "2026-10-28T07:29:36.446Z",
+    "ttft_ms": 54.97889999999916,
+    "latency_ms": 2587.2484999999997,
+    "completion_tokens": 96,
+    "prompt_tokens": 69,
+    "content_events": 96,
+    "first_text_to_last_text_ms": 2531.3837000000003,
+    "text": "Prefill and autoregressive decoding are two key techniques in natural language processing (NLP) that are used to improve the efficiency and accuracy of language models. Prefill decoding involves predicting the next token in the sequence based on the previous tokens, while autoregressive decoding predicts the next token based on the current token and the previous tokens.\n\nIn prefill decoding, the model predicts the next token based on the previous tokens and the context of the sentence. This approach is useful when",
+    "status": "ok",
+    "http_status": 200,
+    "request_id": "e40104c7-6b1f-477b-9a0a-b4397c06f3b9",
+    "headers_ms": 53.78339999999935,
+    "finish_reason": "length",
+    "output_tokens_per_e2e_second": 37.105055815086956,
+    "finished_at": "2026-10-28T07:29:39.034Z",
+    "wave_wall_ms": 2587.3220999999994
+  },
+  "warm": [
+    {
+      "concurrency": 1,
+      "requests": 5,
+      "failures": 0,
+      "ttft_ms": {
+        "n": 5,
+        "median": 60.553099999999176,
+        "min": 54.113699999994424,
+        "max": 65.96410000000469
+      },
+      "latency_ms": {
+        "n": 5,
+        "median": 2582.1028000000006,
+        "min": 2542.175799999999,
+        "max": 2597.0206000000035
+      },
+      "per_request_e2e_tokens_per_second": {
+        "n": 5,
+        "median": 37.17899999953526,
+        "min": 36.96543646977612,
+        "max": 37.762927331776204
+      },
+      "wave_aggregate_tokens_per_second": {
+        "n": 5,
+        "median": 37.17857668170514,
+        "min": 36.96498384091133,
+        "max": 37.7623079063849
+      }
+    },
+    {
+      "concurrency": 2,
+      "requests": 10,
+      "failures": 0,
+      "ttft_ms": {
+        "n": 10,
+        "median": 1318.8548999999948,
+        "min": 59.113499999999476,
+        "max": 2683.6164999999964
+      },
+      "latency_ms": {
+        "n": 10,
+        "median": 3866.1832999999933,
+        "min": 2535.1976999999897,
+        "max": 5233.879099999998
+      },
+      "per_request_e2e_tokens_per_second": {
+        "n": 10,
+        "median": 27.55393039785995,
+        "min": 18.34203621554805,
+        "max": 37.866869317529115
+      },
+      "wave_aggregate_tokens_per_second": {
+        "n": 5,
+        "median": 37.646674236916176,
+        "min": 36.6795599140552,
+        "max": 37.77789329767832
+      }
+    },
+    {
+      "concurrency": 3,
+      "requests": 15,
+      "failures": 0,
+      "ttft_ms": {
+        "n": 15,
+        "median": 2615.4765000000043,
+        "min": 70.70830000000569,
+        "max": 5475.178100000001
+      },
+      "latency_ms": {
+        "n": 15,
+        "median": 5151.611499999999,
+        "min": 2557.1160999999993,
+        "max": 7950.7836000000025
+      },
+      "per_request_e2e_tokens_per_second": {
+        "n": 15,
+        "median": 18.63494558935588,
+        "min": 12.07428158401896,
+        "max": 37.542292272142056
+      },
+      "wave_aggregate_tokens_per_second": {
+        "n": 5,
+        "median": 37.073260224949976,
+        "min": 36.21688845822089,
+        "max": 37.59114531174395
+      }
+    }
+  ],
+  "total_requests": 32,
+  "failed_requests": 0,
+  "caveat": "Small, closed-loop samples. Report medians and ranges; do not present as production percentiles."
+}

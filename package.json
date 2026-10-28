@@ -1,0 +1,15 @@
+{
+  "name": "first-model-serving-gateway",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A dependency-free Node.js inference gateway and reproducible CPU serving experiments",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node src/server.mjs",
+    "test": "node --test",
+    "bench": "node bench/run.mjs",
+    "summarize": "node bench/summarize.mjs"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,52 @@
+{
+  "models": [
+    {
+      "name": "inference-lab:qwen05-cpu",
+      "model": "inference-lab:qwen05-cpu",
+      "modified_at": "2026-10-28T12:58:58.0435601+05:30",
+      "size": 397821017,
+      "digest": "405e8f1b2543091702b025ed2b4e4ca35bc7ae682cf3175df7d07fc507c20057",
+      "details": {
+        "parent_model": "qwen2.5:0.5b",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "494.03M",
+        "quantization_level": "Q4_K_M",
+        "context_length": 32768,
+        "embedding_length": 896,
+        "runner": "llamacpp"
+      },
+      "capabilities": [
+        "completion",
+        "tools"
+      ]
+    },
+    {
+      "name": "qwen2.5:0.5b",
+      "model": "qwen2.5:0.5b",
+      "modified_at": "2026-10-28T12:55:20.765279+05:30",
+      "size": 397821319,
+      "digest": "a8b0c51577010a279d933d14c2a8ab4b268079d44c5c8830c0a93900f1827c67",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "494.03M",
+        "quantization_level": "Q4_K_M",
+        "context_length": 32768,
+        "embedding_length": 896,
+        "runner": "ggml"
+      },
+      "capabilities": [
+        "completion",
+        "tools"
+      ]
+    }
+  ]
+}

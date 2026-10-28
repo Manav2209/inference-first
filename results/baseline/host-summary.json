@@ -1,0 +1,8 @@
+{
+  "sample_count": 93,
+  "mean_inference_cpu_percent_of_machine": 47.93559712594832,
+  "median_inference_cpu_percent_of_machine": 49.144854951417855,
+  "max_inference_cpu_percent_of_machine": 49.36602180161494,
+  "max_inference_working_set_mib": 564.66796875,
+  "note": "Sum of ollama and llama-server process CPU deltas, normalized by the recorded logical CPU count; includes idle boundaries and native probes. Working sets can include shared pages."
+}

@@ -1,0 +1,5 @@
+[
+  "Explain prefill and autoregressive decoding in a language model. Describe how the KV cache changes the work done during generation. Write a detailed technical paragraph of at least 150 words.",
+  "Explain how a model serving gateway handles streamed responses and client cancellation. Discuss time to first token and total latency. Write a detailed technical paragraph of at least 150 words.",
+  "Explain why a CPU can serve a small quantized language model and what limits its performance. Discuss memory capacity and bandwidth. Write a detailed technical paragraph of at least 150 words."
+]

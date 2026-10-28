@@ -1,0 +1,24 @@
+{
+  "models": [
+    {
+      "name": "inference-lab:qwen05-cpu",
+      "model": "inference-lab:qwen05-cpu",
+      "size": 458804427,
+      "digest": "405e8f1b2543091702b025ed2b4e4ca35bc7ae682cf3175df7d07fc507c20057",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "494.03M",
+        "quantization_level": "Q4_K_M"
+      },
+      "expires_at": "2026-10-28T13:05:59.5409467+05:30",
+      "size_vram": 0,
+      "context_length": 2048,
+      "runner": "llamacpp"
+    }
+  ]
+}

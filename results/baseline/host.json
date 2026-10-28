@@ -1,0 +1,19 @@
+{
+  "captured_at": "2026-10-28T07:29:31.4530678Z",
+  "os": "Microsoft Windows 11 Home Single Language",
+  "os_build": "26300",
+  "total_memory_bytes": 7866544128,
+  "available_memory_bytes": 1801211904,
+  "cpu": {
+    "Name": "AMD Ryzen 3 5300U with Radeon Graphics         ",
+    "NumberOfCores": 4,
+    "NumberOfLogicalProcessors": 8
+  },
+  "gpu": {
+    "Name": "AMD Radeon(TM) Graphics",
+    "AdapterRAM": 536870912,
+    "DriverVersion": "31.0.21914.8004"
+  },
+  "node_version": "v22.13.1",
+  "note": "No host name, account name, IP address or credentials collected."
+}

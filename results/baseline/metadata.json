@@ -1,0 +1,42 @@
+{
+  "started_at": "2026-10-28T07:29:31.659Z",
+  "model": "inference-lab:qwen05-cpu",
+  "gateway_url": "http://127.0.0.1:3000",
+  "ollama_url": "http://127.0.0.1:11435",
+  "rounds": 5,
+  "max_tokens": 96,
+  "concurrency_levels": [
+    1,
+    2,
+    3
+  ],
+  "schedule": "rotating closed-loop waves: [1,2,3], [3,1,2], [2,3,1]",
+  "temperature": 0,
+  "seed": 42,
+  "node_version": "v22.13.1",
+  "platform": "win32",
+  "cpu_model": "AMD Ryzen 3 5300U with Radeon Graphics         ",
+  "logical_cpus": 8,
+  "total_memory_bytes": 7866544128,
+  "available_memory_at_start_bytes": 1774399488,
+  "ttft_definition": "client request start to first nonempty delta.content; role-only and headers excluded",
+  "throughput_definition": "sum of provider completion_tokens / actual wave wall time",
+  "prompts": [
+    "Explain prefill and autoregressive decoding in a language model. Describe how the KV cache changes the work done during generation. Write a detailed technical paragraph of at least 150 words.",
+    "Explain how a model serving gateway handles streamed responses and client cancellation. Discuss time to first token and total latency. Write a detailed technical paragraph of at least 150 words.",
+    "Explain why a CPU can serve a small quantized language model and what limits its performance. Discuss memory capacity and bandwidth. Write a detailed technical paragraph of at least 150 words."
+  ],
+  "prompt_sha256": [
+    "8b5e7b8487a00b735bcb761c1cf5c08073cf797cd255732e19c9b170c895d1a3",
+    "bd296d5c113f13038f232b3ad59e5f903401e88470773ed75467cac737052c8b",
+    "122e437ae69851ec3c7e9c879a3288d29d5225f1591316cbf5727a41a985da04"
+  ],
+  "limitations": [
+    "closed-loop microbenchmark; not a capacity or open-loop load test",
+    "model-cold means unloaded; Windows filesystem cache is not flushed",
+    "warm requests may reuse cached prompt prefixes",
+    "background desktop apps remain running"
+  ],
+  "finished_at": "2026-10-28T07:31:07.278Z",
+  "available_memory_at_end_bytes": 1390497792
+}
