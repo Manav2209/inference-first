@@ -66,4 +66,6 @@ fig.tight_layout(rect=(0, .11, 1, 1))
 fig.savefig(run / 'cold-warm.png', dpi=180)
 fig.savefig(run / 'cold-warm.svg')
 plt.close(fig)
+for svg_path in (run / 'concurrency.svg', run / 'cold-warm.svg'):
+    svg_path.write_text('\n'.join(line.rstrip() for line in svg_path.read_text(encoding='utf-8').splitlines()) + '\n', encoding='utf-8')
 print(json.dumps(host_summary, indent=2))
